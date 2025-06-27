@@ -1,70 +1,65 @@
-# Animesh Paramanik — Developer Portfolio 💻🌐
+# Animesh Paramanik - Portfolio Website
 
-This is my personal portfolio website, built to showcase my skills, projects, certifications, and contact details. Designed with a modern multi-page layout, dark mode toggle, and full responsiveness — using the latest web technologies.
+![Portfolio Screenshot](https://raw.githubusercontent.com/Tech-Ani/images/main/preview.png)
 
-![Portfolio Banner](./src/assets/profile.jpg)
-
-## 🔗 Live Site
-👉 [Visit Portfolio](https://animesh-portfolio.vercel.app)
+Welcome to the source code for my personal portfolio website! This site showcases who I am, my skills, projects, and certifications in a clean, interactive design built with HTML, CSS, and JavaScript.
 
 ---
 
-## 📌 About Me
-I'm **Animesh Paramanik**, a Computer Science diploma graduate from *Itahar Government Polytechnic*. Passionate about problem-solving, AI, and modern web technologies.
+## 🚀 Live Demo
+
+🔗 [View Portfolio Live](https://your-live-link.com)
 
 ---
 
-## 🌟 Features
+## 📌 Features
 
-- 🔥 Multi-page layout (Home, About, Skills, Projects, Certificates, Contact)
-- 🌙 Light/Dark mode toggle (Sea Green + Lavender theme)
-- 📄 Resume & certificate showcase with images
-- 📧 Fully functional contact form using EmailJS
-- 📱 Mobile-responsive UI
-
----
-
-## 💼 Projects
-
-| Project | Description | Tech |
-|--------|-------------|------|
-| **ALPHA** | AI assistant using Python and voice commands | Python |
-| **KAIWA** | Real-time chat app with Firebase backend | Java, Firebase |
-| **BETA** | Hand gesture-controlled mouse system | Python, OpenCV |
-| **Smart Room Automation** | IoT-based system for home automation | Microcontrollers, Sensors |
+- 🎯 Responsive design with dark theme styling
+- 🧠 Hero section with animated intro
+- 👨‍💻 About section detailing my background
+- 💡 Project gallery featuring key technical projects
+- 📜 Certifications with dynamic previews
+- 📬 Contact section with LinkedIn, email, and phone links
+- 🎨 Smooth animations and floating UI effects
 
 ---
 
 ## 🛠️ Technologies Used
 
-- React + Vite
-- Tailwind CSS
-- EmailJS
-- Firebase (for KAIWA)
-- Git & GitHub
+- **HTML5**
+- **CSS3** (with custom properties and responsive layout)
+- **JavaScript** (vanilla)
+- **OpenCV, Firebase, Python (shown in projects, not runtime)**
 
 ---
 
-## 📜 Certificates
+## 📂 Folder Structure
 
-- **Intro to ML & Data Science** – Mind Luster  
-- **Data Analysis using Python** – IBM (Cognitive Class)  
-- **Intro to Python** – Harvard (edX)  
-- **AI Applications and ChatGPT** – RTES
-
----
-
-## 📬 Contact Me
-
-- 📧 Email: [developeranimesh3@gmail.com](mailto:developeranimesh3@gmail.com)
-- 🔗 LinkedIn: [animesh-paramanik](https://www.linkedin.com/in/animesh-paramanik-784689281)
+```
+.
+├── index.html       # Main HTML page
+├── images/          # Linked certificate & profile images (hosted externally)
+└── MY bio data.pdf  # Resume download link (optional)
+```
 
 ---
 
-## 📁 Run Locally
+## 🧑‍💻 Author
 
-```bash
-git clone https://github.com/YOUR_USERNAME/animesh-portfolio.git
-cd animesh-portfolio
-npm install
-npm run dev
+**Animesh Paramanik**  
+🎓 Diploma in Computer Science & Technology  
+📫 developeranimesh3@gmail.com  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/animesh-paramanik-784689281)
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE)
+
+---
+
+## 🙌 Acknowledgements
+
+- Certificates by Google Cloud, IBM, edX, and others.
+- Technologies showcased: Python, Java, Firebase, OpenCV, IoT, etc.
