@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Animesh Paramanik - Computer Science &amp; Technology</title>
+<title>Animesh Paramanik - Computer Science &amp; Engineering</title>
 <style>
         * {
             margin: 0;
@@ -182,6 +182,13 @@
             margin: 0 auto;
         }
 
+        .about .project-card {
+            background: transparent;
+            border: none;
+            padding: 0;
+            box-shadow: none;
+        }
+
         .section-title {
             font-size: 3rem;
             font-weight: 700;
@@ -236,27 +243,35 @@
 
         .about-visual {
             position: relative;
-            height: 400px;
-            background: var(--gradient);
-            border-radius: 20px;
+            height: auto;
+            background: transparent;
+            border-radius: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
-        }
-
-        .about-visual::before {
-            content: '';
-            position: absolute;
-            inset: 2px;
-            background: var(--dark);
-            border-radius: 18px;
+            overflow: visible;
+            padding: 20px 0;
         }
 
         .about-visual-content {
             position: relative;
-            z-index: 1;
+            z-index: 2;
             text-align: center;
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-visual-content img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;
         }
 
         /* Projects Section */
@@ -269,7 +284,7 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 40px;
         }
 
@@ -347,7 +362,7 @@
 
         .certificates-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             margin-top: 60px;
         }
@@ -500,33 +515,197 @@
         @media (max-width: 768px) {
             nav {
                 top: 10px;
-                padding: 10px 20px;
+                padding: 10px 15px;
+                width: 95%;
+                left: 50%;
+                transform: translateX(-50%);
             }
 
             nav ul {
-                gap: 20px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                height: auto;
+                min-height: 60vh;
+                padding: 80px 20px 40px;
+            }
+
+            .hero-content {
+                padding: 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 0.95rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 40px;
+            }
+
+            .about {
+                padding: 60px 20px;
             }
 
             .about-content {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 30px;
+            }
+
+            .about-visual {
+                height: auto;
+            }
+
+            .about-text {
+                font-size: 1rem;
+            }
+
+            .about-text h3 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+            }
+
+            .skills {
+                gap: 10px;
+            }
+
+            .skill-tag {
+                padding: 6px 15px;
+                font-size: 0.85rem;
+            }
+
+            .projects {
+                padding: 60px 20px;
             }
 
             .projects-grid {
                 grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .project-card {
+                padding: 20px;
+            }
+
+            .project-card h3 {
+                font-size: 1.2rem;
+                margin-bottom: 12px;
+            }
+
+            .project-card p {
+                font-size: 0.95rem;
+            }
+
+            .certificates {
+                padding: 60px 20px;
+            }
+
+            .certificates-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .certificate-card {
+                padding: 18px;
+            }
+
+            .certificate-image {
+                height: 150px;
+                margin-bottom: 15px;
+            }
+
+            .certificate-info h3 {
+                font-size: 1.1rem;
+                margin-bottom: 8px;
+            }
+
+            .certificate-info p {
+                font-size: 0.9rem;
+            }
+
+            .contact {
+                padding: 60px 20px;
             }
 
             .contact-links {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
+                margin-top: 30px;
+            }
+
+            .contact-link {
+                width: 90%;
+                justify-content: center;
+                padding: 12px 20px;
+                font-size: 0.95rem;
+            }
+
+            .floating-element {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                gap: 10px;
+                font-size: 0.8rem;
+            }
+
+            nav a {
+                font-size: 0.8rem;
+            }
+
+            .hero {
+                min-height: 50vh;
+                padding: 70px 15px 30px;
             }
 
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 1.8rem;
             }
 
             .hero p {
-                font-size: 1.2rem;
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 30px;
+            }
+
+            .about {
+                padding: 40px 15px;
+            }
+
+            .projects {
+                padding: 40px 15px;
+            }
+
+            .certificates {
+                padding: 40px 15px;
+            }
+
+            .contact {
+                padding: 40px 15px;
             }
         }
     </style>
@@ -548,20 +727,27 @@
 <div class="floating-element"></div>
 <div class="floating-element"></div>
 <div class="hero-content">
-<section class="about" id="about"><img alt="Animesh Paramanik" src="https://raw.githubusercontent.com/Tech-Ani/images/14e68249ef63a1b5664e0f40e9f5720c89ad34c9/my%20re-size%20pic.jpg" style="max-width:180px; border-radius: 12px; margin-bottom: 1rem; display:block; margin-left:auto; margin-right:auto; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"/>
-<h1>Animesh Paramanik</h1>
-<p>Computer Science &amp; Technology Student | AI Enthusiast | Android Developer</p>
+<h1>I am Animesh Paramanik, Welcome to my Portfolio</h1>
 <a class="cta-button" href="#projects">View My Work</a>
 </div>
 </section>
+
 <!-- About Section -->
+<section class="about" id="about">
 <h2 class="section-title fade-in">About Me</h2>
 <div class="project-card fade-in">
 <div class="about-content">
+<div class="about-visual fade-in">
+<div class="about-visual-content">
+<img alt="Animesh Paramanik" src="https://raw.githubusercontent.com/Tech-Ani/images/14e68249ef63a1b5664e0f40e9f5720c89ad34c9/my%20re-size%20pic.jpg" style="max-width:100%; height:auto; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);"/>
+</div>
+</div>
 <div class="about-text fade-in">
-<h2>Passionate about Technology &amp; Innovation</h2>
-<p>I'm a dedicated Computer Science &amp; Technology graduate from Itahar Government Polytechnic College with a strong passion for software development and artificial intelligence. I specialize in Python programming, Android development, and IoT solutions.</p>
-<p>Beyond coding, I enjoy playing cricket, traveling, and exploring new technologies. I'm always eager to learn and contribute to innovative projects that make a difference.</p>
+<h3>About Me</h3>
+<p>Hello! I'm Animesh Paramanik, a Computer Science enthusiast currently pursuing a B.Tech degree in Computer Science and Engineering at Ideal Institute of Engineering. I completed my Diploma in Computer Science & Technology from Itahar Government Polytechnic College and have a strong passion for Artificial Intelligence, Android Development, Python programming, and IoT.
+
+I love building innovative solutions that solve real-world problems. From AI-powered virtual assistants to IoT automation systems and real-time applications, I enjoy turning ideas into reality through code. I am always eager to learn new technologies, take on challenging projects, and grow as a developer.
+</p>
 <div class="skills">
 <span class="skill-tag">Python</span>
 <span class="skill-tag">Java</span>
